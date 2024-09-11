@@ -3,5 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var dig string
+	fmt.Scan(&dig)
+
+	for _, d := range dig {
+		num := int(d - '0')
+		num *= num
+		fmt.Print(num)
+	}
 }
