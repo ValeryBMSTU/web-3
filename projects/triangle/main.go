@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var a, b float64
+	fmt.Println("Add the length of katets:")
+	fmt.Scan(&a, &b)
+	fmt.Print(math.Sqrt(a*a + b*b))
 }
