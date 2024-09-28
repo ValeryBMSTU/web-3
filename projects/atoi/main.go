@@ -1,7 +1,25 @@
 package main
 
-import "fmt"
+import (
+ "fmt"
+ "strconv"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+ var number int
+ fmt.Scanln(&number)
+
+ result := ""
+ for _, digit := range strconv.Itoa(number) {
+  digitInt, _ := strconv.Atoi(string(digit))
+  squaredDigit := digitInt * digitInt
+  result += strconv.Itoa(squaredDigit)
+ }
+
+ fmt.Println(result)
 }
+
+
+
+
+

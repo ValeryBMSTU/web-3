@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var a, b int
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d", &b)
+
+	hypotenuse := math.Sqrt(float64(a*a + b*b))
+
+	fmt.Println(hypotenuse)
 }
