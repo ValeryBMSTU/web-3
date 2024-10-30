@@ -15,6 +15,6 @@ func main() {
 		var input string = scanner.Text()
 		a, _ := strconv.Atoi(strings.Split(input, " ")[0])
 		b, _ := strconv.Atoi(strings.Split(input, " ")[1])
-		fmt.Println(math.Sqrt(float64(a * b)))
+		fmt.Println(math.Sqrt(float64(a * a + b * b)))
 	}
 }
