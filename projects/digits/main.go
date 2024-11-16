@@ -1,7 +1,13 @@
 package main
-
 import "fmt"
-
 func main() {
-	fmt.Println("Hello, world!!!")
+var myString string
+fmt.Scan(&myString)
+var mx rune
+for _, v := range myString {
+if v > mx {
+mx = v
+}
+}
+fmt.Printf("%c", mx)
 }
