@@ -14,7 +14,8 @@ func main() {
         }else{
             res *= 10
         }
-    }
+    }  
+     
     res += (int(s[len(s) - 1]) - 48) * (int(s[len(s) - 1]) - 48)
     fmt.Println(res)
 }
